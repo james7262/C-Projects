@@ -152,7 +152,7 @@ void decisions6 (void) {
 
     // Since x != 1 is false, the second expression is evaluated, short circuit evaluation will not happen.
     if (x != 1 || y) {
-        printf("If block executed.\n"); .
+        printf("If block executed.\n"); 
     } else {
         printf("Else block executed.\n"); // Displayed.
     }
