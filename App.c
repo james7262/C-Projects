@@ -8,6 +8,7 @@
 #include "./headers/Loops.h"
 #include "./headers/Functions.h"
 #include "./headers/Pointers.h"
+#include "./headers/AssignmentC.h"
 
 int main(void) {
     // puts("Hello World!!!");
@@ -46,4 +47,14 @@ int main(void) {
     //printAddress();
     //printf("The global variable i stores its value at %p\n", getAddress());
     //printf("The global static variable i stores %d\n", getDataAtAddress());
+
+    // Testing AssignmentC functionality
+    int n = 4;
+    int p = 3;
+    
+    printf("Power - Normal Variables\n");
+    printf("%d taken to the power of %d is %d\n", n, p, genPower(n, p));
+    
+    printf("Power - Pointer Variables\n");
+    printf("%d taken to the power of %d is %d\n", n, p, genPowerReference(n, p));
 }
